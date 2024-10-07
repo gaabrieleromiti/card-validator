@@ -25,7 +25,7 @@ func reverse(s string) (r string) {
 
 func luhn(s string) bool {
 	s = strings.Replace(s, " ", "", -1)
-	if len(s) < 16 || len(s) > 16 {
+	if len(s) != 16 {
 		return false
 	}
 
