@@ -51,7 +51,6 @@ func luhn(s string) bool {
 func LunhHandler(w http.ResponseWriter, r *http.Request) {
 	var req Request
 
-	fmt.Println("r.body", r.Body)
 	err := json.NewDecoder(r.Body).Decode(&req)
 	if err != nil {
 		fmt.Println("Error decoding request")
